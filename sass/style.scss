@@ -1,0 +1,101 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+// ================== headers =======================
+.first-header {
+
+}
+
+.first-header-light {
+    // @extend .first-header;
+}
+
+.first-header-dark {
+    // @extend .first-header;
+}
+
+.second-header {
+
+}
+
+.second-header-light {
+    // @extend .second-header;
+}
+
+.second-header-dark {
+    // @extend .second-header;
+}
+
+.third-header {
+
+}
+
+.third-header-light {
+    // @extend .third-header;
+}
+
+.third-header-dark {
+    // @extend .third-header;
+}
+
+.fourth-header {
+
+}
+
+.button-light {
+
+}
+
+.button-dark {
+
+}
+
+p {
+
+}
+// ================== header ========================
+// ================== jumbotron =====================
+// ==================  about us =====================
+// ==================  services =====================
+// ==================  projects =====================
+// ==================  team =========================
+// ==================  happy clients ================
+// ==================  cooperation ==================
+// ==================  price ========================
+// ==================  premium ======================
+// ==================  some fact ====================
+// ==================  contact ======================
+// ==================  footer =======================
+header {
+    position: relative;
+    .logo {
+        position: absolute;
+        top: 10px;
+    }
+    .top-nav {
+        background-color: $first-color;
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            li {
+                margin-right: 10px;
+                padding: 10px 0;
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $second-color;
+                }
+            }
+        }
+    }
+}
