@@ -1,16 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: Montserrat; }
+
 .container {
   max-width: 1200px;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
+
+.third-color {
+  color: #b88b58; }
 
 header {
-  position: relative; }
+  position: relative;
+  background-color: #000; }
   header .logo {
     position: absolute;
-    top: 10px; }
+    top: 22px; }
   header .top-nav {
     background-color: #000; }
     header .top-nav ul {
@@ -21,8 +30,21 @@ header {
           justify-content: flex-end; }
       header .top-nav ul li {
         margin-right: 10px;
-        padding: 10px 0; }
+        padding: 10px 0;
+        padding: 43px 0 37px 0;
+        border-bottom: 5px solid #000;
+        margin: 0 10px; }
+        header .top-nav ul li:hover {
+          border-bottom: 5px solid #b88b58; }
         header .top-nav ul li a {
           text-transform: uppercase;
           text-decoration: none;
-          color: #fff; }
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          margin: 0 5px; }
+
+section.jumbotron {
+  background-color: red;
+  background-image: url("../images/jumbotron.png");
+  height: 85vh; }
