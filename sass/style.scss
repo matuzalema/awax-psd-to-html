@@ -18,11 +18,14 @@ body {
 
 // ================== headers =======================
 .first-header {
-
+    font-weight: 700;
+    font-size: 72px;
+    text-transform: uppercase;
 }
 
 .first-header-light {
-    // @extend .first-header;
+    @extend .first-header;
+    color: #fff;
 }
 
 .first-header-dark {
@@ -41,8 +44,11 @@ body {
     // @extend .second-header;
 }
 
-.third-header {
-
+.third-header-light {
+    color: $second-color;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .third-header-light {
@@ -57,12 +63,25 @@ body {
 
 }
 
-.button-light {
+.button {
+    width: 194px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    &:focus {
+        outline: none;
+    }
+
+}
+.btn-light {
 
 }
 
-.button-dark {
-
+.btn-dark {
+    @extend .button;
+    background-color: $third-color;
+    color: $second-color;
 }
 
 p {
@@ -115,10 +134,20 @@ header {
     }
 }
 // ================== jumbotron =====================
-section.jumbotron {
+.jumbotron {
     background-color:  red;
     background-image: url("../images/jumbotron.png");
-    height: 85vh;
+    height: calc(100vh - 94px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        margin-bottom: 49px;
+    }
+    .dot {
+
+    }
 }
 
 
