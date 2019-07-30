@@ -1,6 +1,7 @@
 @import "variables";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,12 @@
 
 body {
     font-family: Montserrat;
+    p {
+        color: #242424;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px;
+    }
 }
 
 .container {
@@ -33,7 +40,11 @@ body {
 }
 
 .second-header {
-
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 63px;
+    text-transform: uppercase;
 }
 
 .second-header-light {
@@ -60,7 +71,11 @@ body {
 }
 
 .fourth-header {
-
+    text-align: center;
+    font-size: 14px;
+    color: $fourth-color;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .button {
@@ -69,6 +84,9 @@ body {
     border-radius: 30px;
     border: none;
     text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+    }
     &:focus {
         outline: none;
     }
@@ -84,13 +102,10 @@ body {
     color: $second-color;
 }
 
-p {
-
-}
-
 .third-color {
     color: $third-color;
 }
+
 // ================== header ========================
 header {
     position: relative;
@@ -99,6 +114,9 @@ header {
     .logo {
         position: absolute;
         top: 22px;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .top-nav {
@@ -126,17 +144,20 @@ header {
                     color: $second-color;
                     font-size: 14px;
                     font-weight: 700;
-                   margin: 0 5px;
+                    margin: 0 5px;
+                    padding: 43px 0 37px 0;
                     
                 }
             }
         }
     }
 }
+
 // ================== jumbotron =====================
 .jumbotron {
-    background-color:  red;
     background-image: url("../images/jumbotron.png");
+    background-position: 50% 50%;
+    background-size: cover;
     height: calc(100vh - 94px);
     display: flex;
     flex-direction: column;
@@ -145,13 +166,62 @@ header {
     h2 {
         margin-bottom: 49px;
     }
-    .dot {
-
+    .dots {
+        display: flex;
+        flex-direction: row;
+        margin-top: 42px;
+        .dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid $third-color;
+            margin: 5px;
+            &:hover {
+                cursor: pointer;
+            }
+            &.active {
+                background-color: $third-color;
+            }
+        }
     }
 }
 
-
 // ==================  about us =====================
+.about {
+    position: relative;
+    .telephone {
+        position: absolute;
+        background-color: $third-color;
+        width: 40px;
+        height: 39px;
+        border-radius: 50%;
+        padding: 7px;
+        right: 98px;
+        top: -90px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .about-desc {
+        display: flex;
+        margin-top: 55px;
+
+        .about-left {
+            margin-right: 32px;
+        }
+
+        button {
+            margin-top: 32px;
+        }
+    }
+
+    .about-video{
+        box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
 // ==================  services =====================
 // ==================  projects =====================
 // ==================  team =========================

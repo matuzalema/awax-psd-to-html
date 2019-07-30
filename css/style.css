@@ -5,6 +5,11 @@
 
 body {
   font-family: Montserrat; }
+  body p {
+    color: #242424;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px; }
 
 .container {
   max-width: 1200px;
@@ -19,11 +24,25 @@ body {
 .first-header-light {
   color: #fff; }
 
+.second-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 63px;
+  text-transform: uppercase; }
+
 .third-header-light {
   color: #fff;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase; }
+
+.fourth-header {
+  text-align: center;
+  font-size: 14px;
+  color: #aeaeae;
+  text-transform: uppercase;
+  margin-top: 10px; }
 
 .button, .btn-dark {
   width: 194px;
@@ -31,6 +50,8 @@ body {
   border-radius: 30px;
   border: none;
   text-transform: uppercase; }
+  .button:hover, .btn-dark:hover {
+    cursor: pointer; }
   .button:focus, .btn-dark:focus {
     outline: none; }
 
@@ -47,6 +68,8 @@ header {
   header .logo {
     position: absolute;
     top: 22px; }
+    header .logo:hover {
+      cursor: pointer; }
   header .top-nav {
     background-color: #000; }
     header .top-nav ul {
@@ -69,11 +92,13 @@ header {
           color: #fff;
           font-size: 14px;
           font-weight: 700;
-          margin: 0 5px; }
+          margin: 0 5px;
+          padding: 43px 0 37px 0; }
 
 .jumbotron {
-  background-color: red;
   background-image: url("../images/jumbotron.png");
+  background-position: 50% 50%;
+  background-size: cover;
   height: calc(100vh - 94px);
   display: -ms-flexbox;
   display: flex;
@@ -85,3 +110,45 @@ header {
       align-items: center; }
   .jumbotron h2 {
     margin-bottom: 49px; }
+  .jumbotron .dots {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin-top: 42px; }
+    .jumbotron .dots .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid #b88b58;
+      margin: 5px; }
+      .jumbotron .dots .dot:hover {
+        cursor: pointer; }
+      .jumbotron .dots .dot.active {
+        background-color: #b88b58; }
+
+.about {
+  position: relative; }
+  .about .telephone {
+    position: absolute;
+    background-color: #b88b58;
+    width: 40px;
+    height: 39px;
+    border-radius: 50%;
+    padding: 7px;
+    right: 98px;
+    top: -90px; }
+    .about .telephone:hover {
+      cursor: pointer; }
+  .about .about-desc {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 55px; }
+    .about .about-desc .about-left {
+      margin-right: 32px; }
+    .about .about-desc button {
+      margin-top: 32px; }
+  .about .about-video {
+    box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42); }
+    .about .about-video:hover {
+      cursor: pointer; }
