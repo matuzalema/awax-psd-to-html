@@ -24,12 +24,16 @@ body {
 .first-header-light {
   color: #fff; }
 
-.second-header {
+.second-header, .second-header-light {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   margin-top: 63px;
   text-transform: uppercase; }
+
+.second-header-light {
+  color: #fff;
+  padding-top: 63px; }
 
 .third-header-light {
   color: #fff;
@@ -43,6 +47,15 @@ body {
   color: #aeaeae;
   text-transform: uppercase;
   margin-top: 10px; }
+
+.fiveth-header {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff; }
+
+.sixth-header {
+  color: #7e7e7e;
+  font-size: 12px; }
 
 .button, .btn-dark {
   width: 194px;
@@ -152,3 +165,22 @@ header {
     box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42); }
     .about .about-video:hover {
       cursor: pointer; }
+
+.services {
+  background-color: #000;
+  padding-bottom: 43px; }
+  .services .services-items {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 63px; }
+    .services .services-items .services-item {
+      text-align: center;
+      border-left: 2px solid #aeaeae;
+      padding: 20px 30px;
+      width: 300px; }
+      .services .services-items .services-item .services-img {
+        margin-bottom: 38px; }
+      .services .services-items .services-item .sixth-header-services {
+        margin-top: 13px; }
+      .services .services-items .services-item:last-child {
+        border-right: 2px solid #aeaeae; }

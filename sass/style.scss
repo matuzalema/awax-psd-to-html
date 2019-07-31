@@ -48,7 +48,10 @@ body {
 }
 
 .second-header-light {
-    // @extend .second-header;
+    @extend .second-header;
+    color: $second-color;
+    padding-top: 63px;
+    
 }
 
 .second-header-dark {
@@ -78,6 +81,16 @@ body {
     margin-top: 10px;
 }
 
+.fiveth-header {
+font-size: 18px;
+text-transform: uppercase;
+color: $second-color;
+}
+
+.sixth-header {
+    color: #7e7e7e;
+    font-size: 12px;
+}
 .button {
     width: 194px;
     height: 45px;
@@ -223,6 +236,35 @@ header {
     }
 }
 // ==================  services =====================
+.services {
+    background-color: $first-color;
+    padding-bottom: 43px;
+
+    .services-items {
+        display: flex;
+        margin-top: 63px;
+
+        .services-item {
+            text-align: center;
+            border-left: 2px solid $fourth-color;
+            padding: 20px 30px;
+            width: 300px;
+
+            .services-img {
+                margin-bottom: 38px;
+            }
+
+            .sixth-header-services{
+                margin-top: 13px;
+            }
+
+            &:last-child {
+                border-right: 2px solid $fourth-color;
+            }
+        }
+    }
+    // padding-top: 92px;
+}
 // ==================  projects =====================
 // ==================  team =========================
 // ==================  happy clients ================
