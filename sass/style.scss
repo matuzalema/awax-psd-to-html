@@ -315,11 +315,53 @@ header {
         flex-wrap: wrap;
         justify-content: space-around;
 
-        .img-projects {
-             margin-bottom: 20px;
-             &:hover {
-                 cursor: pointer;
-             }
+        .img-projects-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+            // width: 50%;
+
+            .img-projects {
+                //  margin-bottom: 20px;
+                //  position: relative;
+                 display: block;
+                 width: 100%;
+                 height: auto;
+                 &:hover {
+                     cursor: pointer;
+                 }
+            }
+
+            .img-projects-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                
+                .img-overlay-header{
+                    position: absolute;
+                    top: 25%;
+                    left: 35%;
+                    color: $second-color;
+                }
+                .img-overlay-text {
+                    position: absolute;
+                    font-size: 12px;
+                    font-weight: 300;
+                    top: 50%;
+                    left: 20%;
+                    color: $second-color;
+                }
+            }
+            &:hover .img-projects-overlay{
+                background-color: $first-color;
+                opacity: 0.75;
+                cursor: pointer;
+            }
         }
     }
 

@@ -228,9 +228,40 @@ header {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .projects-wrapper .imgs-projects .img-projects {
+    .projects-wrapper .imgs-projects .img-projects-wrapper {
+      position: relative;
       margin-bottom: 20px; }
-      .projects-wrapper .imgs-projects .img-projects:hover {
+      .projects-wrapper .imgs-projects .img-projects-wrapper .img-projects {
+        display: block;
+        width: 100%;
+        height: auto; }
+        .projects-wrapper .imgs-projects .img-projects-wrapper .img-projects:hover {
+          cursor: pointer; }
+      .projects-wrapper .imgs-projects .img-projects-wrapper .img-projects-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease; }
+        .projects-wrapper .imgs-projects .img-projects-wrapper .img-projects-overlay .img-overlay-header {
+          position: absolute;
+          top: 25%;
+          left: 35%;
+          color: #fff; }
+        .projects-wrapper .imgs-projects .img-projects-wrapper .img-projects-overlay .img-overlay-text {
+          position: absolute;
+          font-size: 12px;
+          font-weight: 300;
+          top: 50%;
+          left: 20%;
+          color: #fff; }
+      .projects-wrapper .imgs-projects .img-projects-wrapper:hover .img-projects-overlay {
+        background-color: #000;
+        opacity: 0.75;
         cursor: pointer; }
   .projects-wrapper .btn-projects {
     margin: 30px auto 56px; }
