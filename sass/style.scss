@@ -266,6 +266,67 @@ header {
     // padding-top: 92px;
 }
 // ==================  projects =====================
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .btns-projects {
+        display: flex;
+        justify-content: center;
+        margin-top: 54px;
+    }
+
+    .btn-project {
+        margin-bottom: 38px;
+        padding: 24px;
+        text-transform: uppercase;
+        border-top: 1px solid #cfcfcf;
+        border-bottom: 1px solid #cfcfcf;
+        border-right: 1px solid #cfcfcf;
+        border-left: none;
+        background-color: #ededed;
+        font-size: 14px;
+        font-weight: 300;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:first-child {
+            border-radius: 50% 0 0 50%;
+            padding-left: 40px;
+        }
+
+        &:last-child {
+            border-radius: 0 50% 50% 0;
+            padding-right: 40px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $second-color;
+            transition: 1s;
+        }
+    }
+
+    .imgs-projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .img-projects {
+             margin-bottom: 20px;
+             &:hover {
+                 cursor: pointer;
+             }
+        }
+    }
+
+    .btn-projects {
+        margin: 30px auto 56px;
+    }
+}
 // ==================  team =========================
 // ==================  happy clients ================
 // ==================  cooperation ==================
