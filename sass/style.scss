@@ -23,7 +23,29 @@ body {
     margin: 0 auto;
 }
 
+.dots {
+    display: flex;
+    flex-direction: row;
+    margin-top: 42px;
+    justify-content: center;
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid $third-color;
+        margin: 5px;
+        &:hover {
+            cursor: pointer;
+        }
+        &.active {
+            background-color: $third-color;
+        }
+    }
+}
+
 // ================== headers =======================
+
 .first-header {
     font-weight: 700;
     font-size: 72px;
@@ -91,6 +113,7 @@ color: $second-color;
     color: #7e7e7e;
     font-size: 12px;
 }
+
 .button {
     width: 194px;
     height: 45px;
@@ -103,8 +126,8 @@ color: $second-color;
     &:focus {
         outline: none;
     }
-
 }
+
 .btn-light {
 
 }
@@ -178,24 +201,6 @@ header {
     align-items: center;
     h2 {
         margin-bottom: 49px;
-    }
-    .dots {
-        display: flex;
-        flex-direction: row;
-        margin-top: 42px;
-        .dot {
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            border: 2px solid $third-color;
-            margin: 5px;
-            &:hover {
-                cursor: pointer;
-            }
-            &.active {
-                background-color: $third-color;
-            }
-        }
     }
 }
 
@@ -323,11 +328,11 @@ header {
             .img-projects {
                 //  margin-bottom: 20px;
                 //  position: relative;
-                 display: block;
-                 width: 100%;
-                 height: auto;
+                //  display: block;
+                //  width: 100%;
+                //  height: auto;
                  &:hover {
-                     cursor: pointer;
+                    //  cursor: pointer;
                  }
             }
 
@@ -370,6 +375,62 @@ header {
     }
 }
 // ==================  team =========================
+.team {
+     background-image: url("../images/Bg_image.png");
+     padding-bottom: 43px;
+
+     .team-items {
+         display: flex;
+         justify-content: space-around;
+         margin-top: 43px;
+
+         .team-item {
+             background-color: $second-color;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             padding: 43px; 
+
+             .name {
+             margin-top: 45px;
+             font-size: 21px;
+             font-weight: 500;
+             text-transform: uppercase;
+             }
+
+             .workplace{
+                color: #242424;
+                font-weight: 300;
+                font-size: 14px; 
+             }
+
+             .team-media {
+                 display: flex;
+
+                 .team-media-item {
+                    margin: 40px 3px 0 3px;
+                    background-color: #bebebe;
+                    color: $second-color;
+                    width: 12px;
+                    height: 12px;
+                    text-align: center;
+                    padding: 8px;
+                    line-height: 12px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $third-color;
+                    }
+
+                    &.active {
+                        background-color: $third-color;
+                    }   
+                 }
+             }
+         }
+     }
+}
 // ==================  happy clients ================
 // ==================  cooperation ==================
 // ==================  price ========================
