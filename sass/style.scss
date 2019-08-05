@@ -432,6 +432,38 @@ header {
      }
 }
 // ==================  happy clients ================
+.clients-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+
+    .client-name{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .client-workspace{
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    .client-img {
+        margin: 77px 0 29px 0;
+    }
+
+    .quote-img {
+        margin-bottom: 18px;
+    }
+    
+    .client-desc {
+        text-align: center;
+        color: #7e7e7e;
+    }
+}
 // ==================  cooperation ==================
 // ==================  price ========================
 // ==================  premium ======================
