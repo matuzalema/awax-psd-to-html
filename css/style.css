@@ -310,27 +310,39 @@ header {
           .team .team-items .team-item .team-media .team-media-item.active {
             background-color: #b88b58; }
 
-.clients-wrapper {
+.clients {
+  border: 1px solid #cfcfcf; }
+  .clients .clients-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 43px; }
+    .clients .clients-wrapper .client-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 5px; }
+    .clients .clients-wrapper .client-workspace {
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-weight: 600; }
+    .clients .clients-wrapper .client-img {
+      margin: 77px 0 29px 0; }
+    .clients .clients-wrapper .quote-img {
+      margin-bottom: 18px; }
+    .clients .clients-wrapper .client-desc {
+      text-align: center;
+      color: #7e7e7e; }
+
+.brands-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 65%;
-  margin: 0 auto; }
-  .clients-wrapper .client-name {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 5px; }
-  .clients-wrapper .client-workspace {
-    font-size: 18px;
-    margin-bottom: 30px;
-    font-weight: 600; }
-  .clients-wrapper .client-img {
-    margin: 77px 0 29px 0; }
-  .clients-wrapper .quote-img {
-    margin-bottom: 18px; }
-  .clients-wrapper .client-desc {
-    text-align: center;
-    color: #7e7e7e; }
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 32px 0; }
+  .brands-wrapper .brands-img {
+    margin: 15px; }
