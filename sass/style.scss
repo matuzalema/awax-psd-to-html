@@ -9,6 +9,7 @@
 
 body {
     font-family: Montserrat;
+
     p {
         color: #242424;
         font-size: 14px;
@@ -107,6 +108,7 @@ body {
 font-size: 18px;
 text-transform: uppercase;
 color: $second-color;
+
 }
 
 .sixth-header {
@@ -120,19 +122,28 @@ color: $second-color;
     border-radius: 30px;
     border: none;
     text-transform: uppercase;
+
     &:hover {
         cursor: pointer;
     }
+
     &:focus {
         outline: none;
     }
 }
 
-.btn-light {
+.btn-dark {
+    @extend .button;
+    background-color: #373737;
+    color: $second-color;
+    transition: 0.3s;
 
+    &:hover {
+        background-color: $third-color;
+    }
 }
 
-.btn-dark {
+.btn-light {
     @extend .button;
     background-color: $third-color;
     color: $second-color;
@@ -482,8 +493,78 @@ header {
     }
 }
 
-// ==================  cooperation ==================
 // ==================  price ========================
+.price {
+    background-color: $fiveth-color;
+    padding-top: 17px;
+    padding-bottom: 62px;
+
+    .price-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 25px;
+
+        .price-item {
+            background-color: $second-color;
+            padding: 31px 65px;
+            text-align: center;
+            color: #242424;
+            margin-top: 20px;
+
+            .price-standart {
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            .price-in-item{
+                font-size: 30px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 4.8px;
+                margin-top: 15px;
+            }
+
+            .price-five-header {
+                color: $fourth-color;
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 23px;
+            }
+
+            .price-desc {
+                color: #7e7e7e;
+                font-size: 10px;
+                font-weight: 400;
+                margin-bottom: 10px;
+
+                &::after {
+                    content: "";
+                    width: 10px;
+                    height: 1px;
+                    display: block;
+                    background-color: $fourth-color;
+                    margin: 10px auto;
+                }
+
+                &:last-child::after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    display: block;
+                }
+            }
+
+            .btn-price {
+                margin-top: 28px;
+                width: 95px;
+                height: 35px;
+                font-size: 12px;
+            }
+        }
+    }
+}
 // ==================  premium ======================
 // ==================  some fact ====================
 // ==================  contact ======================

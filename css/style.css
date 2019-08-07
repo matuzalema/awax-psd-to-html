@@ -76,18 +76,25 @@ body {
   color: #7e7e7e;
   font-size: 12px; }
 
-.button, .btn-dark {
+.button, .btn-dark, .btn-light {
   width: 194px;
   height: 45px;
   border-radius: 30px;
   border: none;
   text-transform: uppercase; }
-  .button:hover, .btn-dark:hover {
+  .button:hover, .btn-dark:hover, .btn-light:hover {
     cursor: pointer; }
-  .button:focus, .btn-dark:focus {
+  .button:focus, .btn-dark:focus, .btn-light:focus {
     outline: none; }
 
 .btn-dark {
+  background-color: #373737;
+  color: #fff;
+  transition: 0.3s; }
+  .btn-dark:hover {
+    background-color: #b88b58; }
+
+.btn-light {
   background-color: #b88b58;
   color: #fff; }
 
@@ -346,3 +353,59 @@ header {
   padding: 32px 0; }
   .brands-wrapper .brands-img {
     margin: 15px; }
+
+.price {
+  background-color: #ededed;
+  padding-top: 17px;
+  padding-bottom: 62px; }
+  .price .price-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 25px; }
+    .price .price-wrapper .price-item {
+      background-color: #fff;
+      padding: 31px 65px;
+      text-align: center;
+      color: #242424;
+      margin-top: 20px; }
+      .price .price-wrapper .price-item .price-standart {
+        text-transform: uppercase;
+        font-size: 14px; }
+      .price .price-wrapper .price-item .price-in-item {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4.8px;
+        margin-top: 15px; }
+      .price .price-wrapper .price-item .price-five-header {
+        color: #aeaeae;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 23px; }
+      .price .price-wrapper .price-item .price-desc {
+        color: #7e7e7e;
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 10px; }
+        .price .price-wrapper .price-item .price-desc::after {
+          content: "";
+          width: 10px;
+          height: 1px;
+          display: block;
+          background-color: #aeaeae;
+          margin: 10px auto; }
+        .price .price-wrapper .price-item .price-desc:last-child::after {
+          content: "";
+          width: 0;
+          height: 0;
+          display: block; }
+      .price .price-wrapper .price-item .btn-price {
+        margin-top: 28px;
+        width: 95px;
+        height: 35px;
+        font-size: 12px; }
