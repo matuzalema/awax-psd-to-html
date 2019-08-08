@@ -122,6 +122,7 @@ color: $second-color;
     border-radius: 30px;
     border: none;
     text-transform: uppercase;
+    transition: 0.3s;
 
     &:hover {
         cursor: pointer;
@@ -136,7 +137,6 @@ color: $second-color;
     @extend .button;
     background-color: #373737;
     color: $second-color;
-    transition: 0.3s;
 
     &:hover {
         background-color: $third-color;
@@ -147,6 +147,10 @@ color: $second-color;
     @extend .button;
     background-color: $third-color;
     color: $second-color;
+
+    &:hover {
+        background-color: #373737;
+    }
 }
 
 .third-color {
@@ -566,6 +570,88 @@ header {
     }
 }
 // ==================  premium ======================
+.premium-wrapper {
+    display: flex;
+    margin-top: 42px;
+    border-bottom: 1px solid #cfcfcf;
+
+    img {
+        width: 50%;
+    }
+
+    .premium-inf {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        color: #242424;
+        margin: 20px 0 0 20px;
+
+        .feature-header {
+            font-size: 18px;
+            margin-top: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: relative;
+
+                &:before {
+                   content: "";
+                   width: 4px;
+                   height: 10px;
+                   position: absolute;
+                   top: 5px;
+                   left: -32px;
+                   border-bottom: 2px solid $third-color;
+                   border-right: 2px solid $third-color;
+                   transform: rotate(45deg);
+               }
+
+               &:after {
+                   content: "";
+                   height: 20px;
+                   width: 20px;
+                   border: 2px solid $third-color;
+                   border-radius: 50%;
+                   position: absolute;
+                   top: 0px;
+                   left: -42px;
+               }        
+
+        }
+
+        .feature-desc {
+            color: #5b5b5b;
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+
+            li {
+                padding-left: 10px;
+                text-indent: -10px;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #5b5b5b;
+                line-height: 25px;
+
+
+                &:before {
+                    content: "-";
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.btn-premium {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
 // ==================  some fact ====================
 // ==================  contact ======================
 // ==================  footer =======================
