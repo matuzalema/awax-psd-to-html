@@ -475,3 +475,44 @@ header {
   display: block;
   margin: 0 auto;
   margin-top: 40px; }
+
+.facts {
+  background-color: #000; }
+  .facts .facts-wrapper {
+    display: -ms-flexbox;
+    display: flex; }
+    .facts .facts-wrapper .fact-item {
+      color: #fff;
+      margin: 66px 0 81px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 0 20px 0 20px; }
+      .facts .facts-wrapper .fact-item .facts-number {
+        font-size: 48px;
+        font-weight: 700;
+        color: #b88b58;
+        position: relative; }
+        .facts .facts-wrapper .fact-item .facts-number::after {
+          content: "-";
+          color: #fff;
+          position: absolute;
+          top: 55px;
+          left: 50%;
+          font-size: 18px; }
+      .facts .facts-wrapper .fact-item .facts-business {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        margin: 30px 0 15px 0; }
+      .facts .facts-wrapper .fact-item .facts-desc {
+        text-align: center;
+        color: #7e7e7e;
+        font-size: 12px;
+        font-weight: 300;
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
