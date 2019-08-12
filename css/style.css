@@ -35,6 +35,17 @@ body {
     .dots .dot.active {
       background-color: #b88b58; }
 
+.media-item {
+  background-color: #bebebe;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  padding: 8px;
+  line-height: 12px;
+  border-radius: 50%;
+  font-size: 12px; }
+
 .first-header, .first-header-light {
   font-weight: 700;
   font-size: 72px;
@@ -516,3 +527,44 @@ header {
         font-weight: 300;
         -ms-flex-item-align: end;
             align-self: flex-end; }
+
+.share {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 66px;
+  border: 1px solid #cfcfcf; }
+  .share .share-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center; }
+    .share .share-wrapper .share-about {
+      margin: 0 71px 0 15px;
+      color: #aeaeae;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .share .share-wrapper .statistic {
+      display: -ms-flexbox;
+      display: flex; }
+      .share .share-wrapper .statistic .count-statistic {
+        margin-left: 5px;
+        margin-right: 36px;
+        letter-spacing: 0.5px;
+        color: #aeaeae;
+        font-weight: 700;
+        font-size: 10px; }
+      .share .share-wrapper .statistic .share-twitter {
+        background-color: #34c5f0; }
+      .share .share-wrapper .statistic .share-linkedin {
+        background-color: #127cb4; }
+      .share .share-wrapper .statistic .share-facebook {
+        background-color: #336297; }
+      .share .share-wrapper .statistic .share-googleplus {
+        background-color: #e74237; }
+      .share .share-wrapper .statistic .share-pinterest {
+        background-color: #b71c29; }
