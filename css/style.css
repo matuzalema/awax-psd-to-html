@@ -568,3 +568,40 @@ header {
         background-color: #e74237; }
       .share .share-wrapper .statistic .share-pinterest {
         background-color: #b71c29; }
+
+.contact-form {
+  width: 50%;
+  margin: 53px auto; }
+  .contact-form .form-items-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .contact-form .form-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%; }
+    .contact-form .form-item .form-name {
+      width: 90%; }
+    .contact-form .form-item label {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #9e9e9e;
+      margin-top: 18px;
+      margin-bottom: 13px; }
+    .contact-form .form-item input, .contact-form .form-item textarea {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 2px solid #a4a4a4; }
+      .contact-form .form-item input:focus, .contact-form .form-item textarea:focus {
+        outline: none; }
+  .contact-form .btn-form {
+    margin-top: 53px;
+    margin: 53px auto 76px;
+    display: block; }
