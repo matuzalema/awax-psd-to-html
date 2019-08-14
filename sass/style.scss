@@ -814,4 +814,34 @@ header {
     }
 }
 
+.map {
+    background-image: url("../images/Map.png");
+    height: 416px;
+    position: relative;
+    .map-contact {
+        background-color: $second-color;
+        width: 35%;
+        position: absolute;
+        top: 36px;
+        left: 230px;
+        .contact-wrapper {
+            display: flex;
+            margin: 20px;
+            // justify-content: space-between;
+            p {
+                color: #7e7e7e;
+                font-size: 12px;
+                font-weight: 500;
+                margin-left: 17px;
+                line-height: 45px;
+            }
+            .media-map {
+                width: 25px;
+                height: 25px;
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
+    }
+}
 // ==================  footer =======================
