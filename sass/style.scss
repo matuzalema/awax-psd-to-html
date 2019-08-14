@@ -724,7 +724,6 @@ header {
     border: 1px solid #cfcfcf;
 
     .share-wrapper {
-        // width: 40%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -799,7 +798,7 @@ header {
             border-top: none;
             border-right: none;
             border-left: none;
-            border-bottom: 2px solid #a4a4a4;
+            border-bottom: 1px solid #a4a4a4;
 
             &:focus {
                 outline: none;
@@ -823,11 +822,10 @@ header {
         width: 35%;
         position: absolute;
         top: 36px;
-        left: 230px;
+        left: 150px;
         .contact-wrapper {
             display: flex;
             margin: 20px;
-            // justify-content: space-between;
             p {
                 color: #7e7e7e;
                 font-size: 12px;
@@ -845,3 +843,82 @@ header {
     }
 }
 // ==================  footer =======================
+footer {
+    background-color: $first-color;
+    position: relative;
+    
+    .scrollUp {
+        position: absolute;
+        background-color: $third-color;
+        border-radius: 50%;
+        padding: 18px 11px;
+        left: 45px;
+        top: -21px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    .footer {
+        padding: 32px 0;
+        display: flex;
+        flex-direction: row;
+
+        .footer-media-wrapper {
+            color: $second-color;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+
+            .footer-media {
+
+                .media-item {
+                    margin: 0 2px;
+                }
+
+                & .active {
+                    background-color:$third-color;
+                }
+            }
+        }
+
+        .footer-desc {
+            width: 100%;
+            margin-right: 30px;
+            color: #7e7e7e;
+        }
+
+        .copyrights {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .footer-subscribe {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 300;
+            width: 100%;
+            background-color: #373737;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+
+            p {
+               color: #9e9e9e;
+               text-align: center;
+               padding-bottom: 15px;
+               margin-bottom: 15px;
+               border-bottom: 2px solid #9e9e9e;
+               width: 70%;
+               margin: 0 auto;
+            }
+
+            button {
+                margin: 20px auto;
+            }
+        }
+    }
+}
