@@ -830,4 +830,9 @@ footer {
 
 @media (max-width: 767px) {
   .btns-projects .btn-project {
-    padding: 10px 4px; } }
+    padding: 10px 4px; }
+  .brands-wrapper {
+    padding: 5px 0; }
+    .brands-wrapper .brands-img {
+      width: 50px;
+      margin: 5px; } }
