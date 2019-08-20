@@ -1019,6 +1019,12 @@ footer {
             margin: 10px;
         }
     }
+
+    .premium-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 767px) {

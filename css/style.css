@@ -826,7 +826,13 @@ footer {
     -ms-flex-align: center;
         align-items: center; }
     .team-items .team-item {
-      margin: 10px; } }
+      margin: 10px; }
+  .premium-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-bottom: 20px; } }
 
 @media (max-width: 767px) {
   .btns-projects .btn-project {
