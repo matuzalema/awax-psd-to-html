@@ -71,10 +71,6 @@ body {
     color: #fff;
 }
 
-.first-header-dark {
-    // @extend .first-header;
-}
-
 .second-header {
     text-align: center;
     font-weight: 700;
@@ -86,27 +82,15 @@ body {
 .second-header-light {
     @extend .second-header;
     color: $second-color;
-    padding-top: 63px;
-    
+    padding-top: 63px;  
 }
 
-.second-header-dark {
-    // @extend .second-header;
-}
 
 .third-header-light {
     color: $second-color;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
-}
-
-.third-header-light {
-    // @extend .third-header;
-}
-
-.third-header-dark {
-    // @extend .third-header;
 }
 
 .fourth-header {
@@ -353,19 +337,7 @@ header {
         .img-projects-wrapper {
             position: relative;
             margin-bottom: 20px;
-            // width: 50%;
-
-            .img-projects {
-                //  margin-bottom: 20px;
-                //  position: relative;
-                //  display: block;
-                //  width: 100%;
-                //  height: auto;
-                 &:hover {
-                    //  cursor: pointer;
-                 }
-            }
-
+            
             .img-projects-overlay {
                 position: absolute;
                 top: 0;
@@ -377,12 +349,13 @@ header {
                 opacity: 0;
                 transition: .5s ease;
                 
-                .img-overlay-header{
+                .img-overlay-header {
                     position: absolute;
                     top: 25%;
                     left: 35%;
                     color: $second-color;
                 }
+
                 .img-overlay-text {
                     position: absolute;
                     font-size: 12px;
@@ -392,6 +365,7 @@ header {
                     color: $second-color;
                 }
             }
+
             &:hover .img-projects-overlay{
                 background-color: $first-color;
                 opacity: 0.75;
@@ -681,7 +655,6 @@ header {
             flex-direction: column;
             align-items: center;
             padding: 0 20px 0 20px;
-            // height: 300px;
 
             .facts-number {
                 font-size: 48px;
@@ -764,7 +737,6 @@ header {
             background-color: #b71c29;
             }
         }
-
     }
 }
 // ==================  contact ======================
@@ -819,15 +791,18 @@ header {
     background-image: url("../images/Map.png");
     height: 416px;
     position: relative;
+
     .map-contact {
         background-color: $second-color;
         width: 35%;
         position: absolute;
         top: 36px;
         left: 150px;
+
         .contact-wrapper {
             display: flex;
             margin: 20px;
+
             p {
                 color: #7e7e7e;
                 font-size: 12px;
@@ -835,6 +810,7 @@ header {
                 margin-left: 17px;
                 line-height: 45px;
             }
+            
             .media-map {
                 width: 25px;
                 height: 25px;
