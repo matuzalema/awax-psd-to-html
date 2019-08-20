@@ -819,7 +819,14 @@ footer {
     text-align: center; }
   .btn-learn-more {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .team-items {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+    .team-items .team-item {
+      margin: 10px; } }
 
 @media (max-width: 767px) {
   .btns-projects .btn-project {
