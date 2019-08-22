@@ -224,6 +224,9 @@ header {
 // ==================  about us =====================
 .about {
     position: relative;
+    p {
+          max-width: 100%;
+    }
     .telephone {
         position: absolute;
         background-color: $third-color;
@@ -1042,6 +1045,29 @@ footer {
 
         .fact-item {
             margin: 30px 0 !important;
+        }
+    }
+
+    .services .services-items {
+        flex-direction: column;
+        align-items: center;
+
+        .services-item {
+            text-align: center;
+            border-left: none;
+            border-top: 2px solid $fourth-color;
+            padding: 20px 30px;
+            width: 300px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &:first-child {
+                border: none;
+            }
         }
     }
 }
