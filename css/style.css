@@ -877,4 +877,22 @@ footer {
       .services .services-items .services-item:last-child {
         border-right: none; }
       .services .services-items .services-item:first-child {
-        border: none; } }
+        border: none; }
+  .share .share-wrapper img {
+    margin-right: 20px; }
+  .share .share-wrapper .share-about {
+    display: none; }
+  .share .share-wrapper .statistic {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-top: 10px;
+    padding: 10px; }
+    .share .share-wrapper .statistic .count-statistic {
+      margin-left: 5px;
+      margin-right: 16px;
+      letter-spacing: 0.5px;
+      color: #aeaeae;
+      font-weight: 700;
+      font-size: 10px; } }

@@ -722,6 +722,7 @@ header {
 
         .statistic {
             display: flex;
+
             .count-statistic{
                 margin-left: 5px;
                 margin-right: 36px;
@@ -730,6 +731,7 @@ header {
                 font-weight: 700;
                 font-size: 10px;
             }
+
             .share-twitter {
                 background-color: #34c5f0;
             }
@@ -1067,6 +1069,33 @@ footer {
 
             &:first-child {
                 border: none;
+            }
+        }
+    }
+
+    .share .share-wrapper {
+
+        img {
+            margin-right: 20px;
+        }
+
+        .share-about {
+           display: none;
+        }
+
+        .statistic {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            padding: 10px;
+
+            .count-statistic{
+                margin-left: 5px;
+                margin-right: 16px;
+                letter-spacing: 0.5px;
+                color: #aeaeae;
+                font-weight: 700;
+                font-size: 10px;
             }
         }
     }
