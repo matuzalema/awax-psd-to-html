@@ -802,6 +802,7 @@ header {
     background-image: url("../images/Map.png");
     height: 416px;
     position: relative;
+    padding: 20px 0;
 
     .map-contact {
         background-color: $second-color;
@@ -809,10 +810,12 @@ header {
         position: absolute;
         top: 36px;
         left: 150px;
+        padding: 20px;
 
         .contact-wrapper {
             display: flex;
-            margin: 20px;
+            align-items: center;
+            margin: 10px;
 
             p {
                 color: #7e7e7e;
@@ -989,10 +992,28 @@ footer {
 .col-offset-12 {margin-left: 100%;}
 }
 
+
+@media (max-width: 1024px) {
+    .map {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+
+        .map-contact {
+            width: 50%;
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .about-left p {
         text-align: center;
     }
+
     .btn-learn-more {
         display: block;
         margin: 0 auto;
@@ -1011,6 +1032,10 @@ footer {
         flex-direction: column;
         align-items: center;
         padding-bottom: 20px;
+    }
+
+    .map .map-contact {
+            width: 50%;
     }
 }
 
@@ -1099,4 +1124,25 @@ footer {
             }
         }
     }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+
+        .map-contact {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 414px){
+    .map .map-contact {
+            width: 100%;
+
+            .contact-wrapper p {
+                font-size: 10px;
+            }
+        }
+    
 }

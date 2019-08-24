@@ -618,17 +618,21 @@ header {
 .map {
   background-image: url("../images/Map.png");
   height: 416px;
-  position: relative; }
+  position: relative;
+  padding: 20px 0; }
   .map .map-contact {
     background-color: #fff;
     width: 35%;
     position: absolute;
     top: 36px;
-    left: 150px; }
+    left: 150px;
+    padding: 20px; }
     .map .map-contact .contact-wrapper {
       display: -ms-flexbox;
       display: flex;
-      margin: 20px; }
+      -ms-flex-align: center;
+          align-items: center;
+      margin: 10px; }
       .map .map-contact .contact-wrapper p {
         color: #7e7e7e;
         font-size: 12px;
@@ -821,6 +825,23 @@ footer {
   .col-offset-12 {
     margin-left: 100%; } }
 
+@media (max-width: 1024px) {
+  .map {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 20px; }
+    .map .map-contact {
+      width: 50%;
+      position: static;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+
 @media (max-width: 992px) {
   .about-left p {
     text-align: center; }
@@ -839,7 +860,9 @@ footer {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .map .map-contact {
+    width: 50%; } }
 
 @media (max-width: 767px) {
   .jumbotron h1 {
@@ -895,4 +918,18 @@ footer {
       letter-spacing: 0.5px;
       color: #aeaeae;
       font-weight: 700;
+      font-size: 10px; }
+  .map {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 40px 20px; }
+    .map .map-contact {
+      width: 80%; } }
+
+@media (max-width: 414px) {
+  .map .map-contact {
+    width: 100%; }
+    .map .map-contact .contact-wrapper p {
       font-size: 10px; } }
