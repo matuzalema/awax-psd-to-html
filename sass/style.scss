@@ -240,9 +240,10 @@ header {
             cursor: pointer;
         }
     }
+
     .about-desc {
         display: flex;
-        margin-top: 55px;
+        margin: 55px 32px;
 
         .about-left {
             margin-right: 32px;
@@ -256,7 +257,9 @@ header {
     .about-video{
         box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42);
         margin: 0 auto;
-        display: block;
+        width: 100%;
+        height: auto;
+
         &:hover {
             cursor: pointer;
         }
@@ -1013,8 +1016,16 @@ footer {
 }
 
 @media (max-width: 992px) {
-    .about-left p {
+
+    .about .about-desc {
+        flex-direction: column;
         text-align: center;
+
+        .about-left {
+            margin-right: 0;
+            margin-bottom: 23px;
+        }
+  
     }
 
     .btn-learn-more {
@@ -1177,6 +1188,5 @@ footer {
 
     footer .scrollUp {
         padding: 14px 7px;
-    }
-    
+    }  
 }

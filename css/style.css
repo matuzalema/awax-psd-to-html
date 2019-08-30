@@ -186,7 +186,7 @@ header {
   .about .about-desc {
     display: -ms-flexbox;
     display: flex;
-    margin-top: 55px; }
+    margin: 55px 32px; }
     .about .about-desc .about-left {
       margin-right: 32px; }
     .about .about-desc button {
@@ -194,7 +194,8 @@ header {
   .about .about-video {
     box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42);
     margin: 0 auto;
-    display: block; }
+    width: 100%;
+    height: auto; }
     .about .about-video:hover {
       cursor: pointer; }
 
@@ -847,8 +848,13 @@ footer {
           justify-content: center; } }
 
 @media (max-width: 992px) {
-  .about-left p {
+  .about .about-desc {
+    -ms-flex-direction: column;
+        flex-direction: column;
     text-align: center; }
+    .about .about-desc .about-left {
+      margin-right: 0;
+      margin-bottom: 23px; }
   .btn-learn-more {
     display: block;
     margin: 0 auto; }
