@@ -950,13 +950,23 @@ footer {
         justify-content: center;
     padding: 40px 20px; }
     .map .map-contact {
-      width: 80%; } }
+      width: 80%; }
+  .btns-projects .btn-project {
+    font-size: 12px; }
+    .btns-projects .btn-project:first-child {
+      padding-left: 10px; }
+    .btns-projects .btn-project:last-child {
+      padding-right: 10px; } }
 
 @media (max-width: 414px) {
   .map .map-contact {
     width: 100%; }
     .map .map-contact .contact-wrapper p {
       font-size: 10px; }
+  .brands-wrapper {
+    padding: 5px 15px; }
+    .brands-wrapper .brands-img {
+      width: 40px; }
   .btn-subscribe {
     width: 90%; }
   footer .scrollUp {

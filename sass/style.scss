@@ -1171,6 +1171,18 @@ footer {
             width: 80%;
         }
     }
+
+    .btns-projects .btn-project {
+        font-size: 12px;
+        
+        &:first-child {
+            padding-left: 10px;
+        }
+
+        &:last-child {
+            padding-right: 10px;
+        }
+    }
 }
 
 @media (max-width: 414px){
@@ -1179,6 +1191,14 @@ footer {
 
         .contact-wrapper p {
             font-size: 10px;
+        }
+    }
+
+    .brands-wrapper {
+        padding: 5px 15px;
+
+        .brands-img {
+            width: 40px;
         }
     }
     
