@@ -51,6 +51,9 @@ html, body {
   border-radius: 50%;
   font-size: 12px; }
 
+.show {
+  display: block; }
+
 .first-header, .first-header-light {
   font-weight: 700;
   font-size: 72px;
@@ -121,7 +124,8 @@ html, body {
 
 header {
   position: relative;
-  background-color: #000; }
+  background-color: #000;
+  padding: 0 30px; }
   header .logo {
     position: absolute;
     top: 22px; }
@@ -129,6 +133,10 @@ header {
       cursor: pointer; }
   header .top-nav {
     background-color: #000; }
+    header .top-nav .fa-bars {
+      display: none; }
+      header .top-nav .fa-bars:hover {
+        cursor: pointer; }
     header .top-nav ul {
       list-style-type: none;
       display: -ms-flexbox;
@@ -830,6 +838,19 @@ footer {
   .col-offset-12 {
     margin-left: 100%; } }
 
+@media (max-width: 1200px) {
+  header .logo {
+    display: none; }
+  header .top-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    header .top-nav ul li {
+      padding: 25px 0 25px 0; }
+      header .top-nav ul li a {
+        font-size: 12px; } }
+
 @media (max-width: 1024px) {
   .map {
     display: -ms-flexbox;
@@ -848,6 +869,27 @@ footer {
           justify-content: center; } }
 
 @media (max-width: 992px) {
+  header {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 20px; }
+    header .top-nav {
+      padding: 10px;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      header .top-nav .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 30px; }
+      header .top-nav ul {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        display: none; }
+        header .top-nav ul li {
+          padding: 10px; }
+          header .top-nav ul li:hover {
+            border-bottom: none; }
   .about .about-desc {
     -ms-flex-direction: column;
         flex-direction: column;
