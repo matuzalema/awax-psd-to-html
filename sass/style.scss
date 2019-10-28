@@ -15,6 +15,17 @@ html, body {
     overflow-x: hidden; 
     font-family: Montserrat;
 
+    header {
+        
+        .show {
+            display: flex;
+        }
+
+        .hide {
+            display: none;
+        }
+    }
+
     p {
         color: #242424;
         font-size: 14px;
@@ -51,7 +62,6 @@ html, body {
 }
 
 .media-item {
-    // margin: 40px 3px 0 3px;
     background-color: #bebebe;
     color: $second-color;
     width: 12px;
@@ -63,9 +73,6 @@ html, body {
     font-size: 12px;
 }
 
-.show {
-    display: block;
-}
 
 // ================== headers =======================
 
@@ -178,43 +185,48 @@ header {
         }
     }
 
+    .fa-bars {
+        display: none;
+        position: absolute;
+        color: $third-color;
+        // left: 34px;
+        // top: 35px;
+    }  
+
     .top-nav {
         background-color: $first-color;
 
-        .fa-bars {
-            display: none;
-
-            &:hover {
-                cursor: pointer;
-            }
+        &:hover {
+            cursor: pointer;
         }
 
-        ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: flex-end;
+    }
 
-            li {
-                margin-right: 10px;
-                padding: 10px 0;
-                padding: 43px 0 37px 0;
-                border-bottom: 5px solid $first-color;
-                margin: 0 10px;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-right: 10px;
+            // padding: 10px 0;
+            padding: 43px 0 37px 0;
+            // border-bottom: 5px solid $first-color;
+            margin: 2px 10px; 
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $second-color;
+                font-size: 14px;
+                font-weight: 700;
+                margin: 0 5px;
+                transition: 0.5s;
 
                 &:hover{
-                    border-bottom: 5px solid $third-color;
-                }
-
-                a {
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    color: $second-color;
-                    font-size: 14px;
-                    font-weight: 700;
-                    margin: 0 5px;
-                    padding: 43px 0 37px 0;
-                    
-                }
+                border-bottom: 2px solid $third-color;
+                padding-bottom: 10px;
+                }  
             }
         }
     }
@@ -307,7 +319,6 @@ header {
             }
         }
     }
-    // padding-top: 92px;
 }
 // ==================  projects =====================
 .projects-wrapper {
@@ -1053,37 +1064,63 @@ footer {
 }
 
 @media (max-width: 992px) {
+    body {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
     header {
          width:200px;
          position: absolute;
          top: 0;
-         right: 20px;
+         right: 0;
+         background: $first-color;
+         padding: 0;
+
+        .fa-bars {
+            display: inline-block;
+            font-size: 30px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
         
         .top-nav {
-           
-            padding: 10px;
+            // padding: 10px 0;
             justify-content: flex-end;
-    
-            .fa-bars {
-                display: block;
-                color: $second-color;
-                font-size: 30px;
-            }
-    
+            display: none;
+            width: 100%;
+            // display: flex;
+            
             ul {
                 flex-direction: column;
-                display: none;
-                li {
-                    padding: 10px;
+                width: 100%;
+                list-style-type: none;
+                background-color: $first-color;
+                display: inline-block;
+                text-align: center;
                     
-                    &:hover {
-                        border-bottom: none;
+                li {
+                    padding: 15px 0;
+                    width: 70%;
+                    margin: 0 auto;
+                    // display: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $second-color;
+                        text-transform: uppercase;
                     }
                 }
             }
         }
-    }  
+    } 
+
     .about .about-desc {
         flex-direction: column;
         text-align: center;
